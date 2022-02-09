@@ -25,7 +25,7 @@ $connectstr_dbname = 'ctoday-wp-mysql-db01';
 $connectstr_dbusername = 'demouser@ctoday-wp-mysql-server01';
 $connectstr_dbpassword = 'demo!pass123';
 
-/** Value from App Settings **/
+/** JPD - Value from App Settings **/
 foreach ($_SERVER as $key => $value) {
  if (strpos($key, "MYSQLCONNSTR_MYSQLCONNSTR") !== 0) {
  continue;
