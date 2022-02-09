@@ -26,7 +26,7 @@ $connectstr_dbusername = 'demouser@ctoday-wp-mysql-server01';
 $connectstr_dbpassword = 'demo!pass123';
 
 foreach ($_SERVER as $key => $value) {
- if (strpos($key, "MYSQLCONNSTR_localdb") !== 0) {
+ if (strpos($key, "MYSQLCONNSTR") !== 0) {
  continue;
  }
  
