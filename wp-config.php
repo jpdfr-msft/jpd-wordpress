@@ -20,16 +20,16 @@
 
 // Reference https://azureossd.github.io/2018/05/22/configure-wordpress-database-connection-on-azure-app-services/
 
-/**
-$connectstr_dbhost = 'ctoday-wp-mysql-server01.privatelink.mysql.database.azure.com';
-$connectstr_dbname = 'ctoday-wp-mysql-db01';
-$connectstr_dbusername = 'demouser@ctoday-wp-mysql-server01';
+
+$connectstr_dbhost = 'ctoday-wp-mysql-server02.mysql.database.azure.com';
+$connectstr_dbname = 'ctoday-wp-mysql-db02';
+$connectstr_dbusername = 'demouser@ctoday-wp-mysql-server02';
 $connectstr_dbpassword = 'demo!pass123';
-**/
+
 
 /** JPD - Value from App Settings **/
 foreach ($_SERVER as $key => $value) {
- if (strpos($key, "MYSQLCONNSTR") !== 0) {
+ if (strpos($key, "MYSQLCONNSTR_") !== 0) {
  continue;
  }
  
